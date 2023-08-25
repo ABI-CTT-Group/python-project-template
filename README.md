@@ -17,7 +17,7 @@
 [stars-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/stargazers
 [issues-shield]: https://img.shields.io/github/issues/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
 [issues-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues
-[issues-closed-shield]: https://img.shields.io/github/issues-closed/SPARC-FAIR-Codeathon/sparc-me.svg
+[issues-closed-shield]: https://img.shields.io/github/issues-closed/{GITHUB_ACCOUNT}/{REPO_NAME}.svg
 [issues-closed-url]: https://GitHub.com/SPARC-FAIR-Codeathon/sparc-me/issues?q=is%3Aissue+is%3Aclosed
 [license-shield]: https://img.shields.io/github/license/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
 [license-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/blob/master/LICENSE
