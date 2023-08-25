@@ -1,6 +1,6 @@
 # {YOUR-REPOSITORY-NAME}
 
-{PROJECT DESCRIPTION}
+{SHORT PROJECT DESCRIPTION}
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
