@@ -33,7 +33,7 @@ Repository structure:
 │   └── PULL_REQUEST_TEMPLATE.md  # The CI pipeline for GitHub Actions
 ├── docs                     # Documentation structure based on Sphinx
 │   └── index.md             # The index page for the docs site
-├── project_name             # The main python package for the project
+├── package_name             # The main python package for the project
 │   ├── base.py              # The base module for the project
 │   ├── __init__.py          # This tells Python that this is a package
 │   ├── __main__.py          # The entry point for the project
