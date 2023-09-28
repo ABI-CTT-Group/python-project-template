@@ -31,7 +31,7 @@
 
 ## HOW TO USE THIS TEMPLATE
 
-Please read [ABOUT_THIS_TEMPLATE](ABOUT_THIS_TEMPLATE), and delete this section.
+Please read [ABOUT_THIS_TEMPLATE](ABOUT_THIS_TEMPLATE.md), and delete this section.
 
 
 ## Table of contents
@@ -52,9 +52,9 @@ Please read [ABOUT_THIS_TEMPLATE](ABOUT_THIS_TEMPLATE), and delete this section.
    - 3.9
 ###  Installing via PyPI
 
-Here is the [link](https://pypi.org/project/PACKAGE_NAME/) to our project on PyPI
+Here is the [link](https://pypi.org/project/{PACKAGE_NAME}/) to our project on PyPI
 ```
-pip install PACKAGE_NAME
+pip install {PACKAGE_NAME}
 ```
 
 ## Contributing
@@ -62,7 +62,7 @@ pip install PACKAGE_NAME
 See [Contributing](CONTRIBUTING.md)
 
 ## Reporting issues 
-To report an issue or suggest a new feature, please use the [issues page](https://github.com/GITHUB_ACCOUNT/REPO_NAME/issues). 
+To report an issue or suggest a new feature, please use the [issues page](https://github.com/GITHUB_ACCOUNT/{REPO_NAME}/issues). 
 Please check existing issues before submitting a new one.
 
 ## Contributors
