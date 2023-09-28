@@ -1,4 +1,5 @@
 # This requirements are for development and testing only, not for production.
 jupyter
+Sphinx
 pytest
 gitchangelog
