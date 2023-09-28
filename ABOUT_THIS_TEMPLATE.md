@@ -53,7 +53,7 @@ Repository structure:
 ├── MANIFEST.in              # A list of files to include in a package
 ├── README.md                # The main readme for the project
 ├── requirements.txt         # An empty file to hold the requirements for the project
-├── requirements-test.txt    # List of requirements for testing and devlopment
+├── requirements-dev.txt    # List of requirements for testing and devlopment
 ├── setup.py                 # The setup.py file for installing and packaging the project
 ```
 
