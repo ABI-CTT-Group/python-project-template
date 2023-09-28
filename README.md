@@ -2,6 +2,7 @@
 
 {SHORT PROJECT DESCRIPTION}
 
+![Python 3](https://img.shields.io/badge/Python->=3.9-blue)
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
