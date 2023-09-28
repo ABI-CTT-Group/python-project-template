@@ -48,9 +48,7 @@ Please read [ABOUT_THIS_TEMPLATE](ABOUT_THIS_TEMPLATE), and delete this section.
 ## Getting started
 
 ### Pre-requisites 
-- [Git](https://git-scm.com/)
 - Python versions:
-   - 3.8
    - 3.9
 ###  Installing via PyPI
 
