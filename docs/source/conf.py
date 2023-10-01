@@ -59,7 +59,7 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = '_static/abi-vc-rgb.png'
+html_logo = '_static/uoa_abi_logo.png'
 
 # Set the root rst to load. This is required to be named contents to allow
 # readthedocs to host the docs using its default configuration.
