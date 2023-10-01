@@ -32,16 +32,17 @@ Repository structure:
 │   ├── ISSUE_TEMPLATE            # issue templates
 │   └── PULL_REQUEST_TEMPLATE.md  # The CI pipeline for GitHub Actions
 ├── docs                     # Documentation structure based on Sphinx
-│   └── index.md             # The index page for the docs site
+    └── source               
+        └── conf.py          # The configuration file for your Sphinx docuemntation project
+        └── index.rst        # The index page for the docs site
 ├── package_name             # The main python package for the project
-│   ├── base.py              # The base module for the project
 │   ├── __init__.py          # This tells Python that this is a package
-│   ├── __main__.py          # The entry point for the project
 │   └── VERSION              # The version for the project is kept in a static file
 └── tests                    # Unit tests for the project (add mote tests files here)
     ├── conftest.py          # Configuration, hooks and fixtures for pytest
     ├── __init__.py          # This tells Python that this is a test package
     └── test_base.py         # The base test case for the project
+├── tutorials
 ├── .gitignore               # A list of files to ignore when pushing to GitHub
 ├── ABOUT_THIS_TEMPLATE      # Template information  
 ├── Containerfile            # A configuration file that automates the steps of creating a container image  
