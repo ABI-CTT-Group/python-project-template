@@ -44,6 +44,7 @@ Repository structure:
     └── test_base.py         # The base test case for the project
 ├── tutorials
 ├── .gitignore               # A list of files to ignore when pushing to GitHub
+├── .readthedocs.yaml        # Read the Docs configuration file
 ├── ABOUT_THIS_TEMPLATE      # Template information  
 ├── Containerfile            # A configuration file that automates the steps of creating a container image  
 ├── CODE_OF_CONDUCT          # code of the conduct 
