@@ -40,7 +40,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="author_name",
-    packages=find_packages(exclude=["tests", ".github"]),
+    packages=find_packages(where='package_name'),
     install_requires=read_requirements("requirements.txt"),
     extras_require={"test": read_requirements("requirements-dev.txt")}
 )
