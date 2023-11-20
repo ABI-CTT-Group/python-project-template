@@ -42,8 +42,5 @@ setup(
     author="author_name",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
-    entry_points={
-        "console_scripts": ["package_name = package_name.__main__:main"]
-    },
-    extras_require={"test": read_requirements("requirements-dev.txt")},
+    extras_require={"test": read_requirements("requirements-dev.txt")}
 )
