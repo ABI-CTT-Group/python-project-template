@@ -1,6 +1,6 @@
 """Python setup.py for package_name package"""
 import io
-import os
+from pathlib import Path
 from setuptools import find_packages, setup
 
 
@@ -13,11 +13,14 @@ def read(*paths, **kwargs):
     """
 
     content = ""
+    current_dir = Path(__file__).resolve().parent
+    file_path = current_dir.joinpath(*paths)
     with io.open(
-        os.path.join(os.path.dirname(__file__), *paths),
-        encoding=kwargs.get("encoding", "utf8"),
+            file_path,
+            encoding=kwargs.get("encoding", "utf8"),
     ) as open_file:
         content = open_file.read().strip()
+
     return content
 
 
