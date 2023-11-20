@@ -12,7 +12,6 @@ def read(*paths, **kwargs):
     ...
     """
 
-    content = ""
     current_dir = Path(__file__).resolve().parent
     file_path = current_dir.joinpath(*paths)
     with io.open(
