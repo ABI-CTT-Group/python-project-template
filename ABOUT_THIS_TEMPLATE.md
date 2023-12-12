@@ -35,14 +35,12 @@ Repository structure:
     └── source               
         └── conf.py          # The configuration file for your Sphinx docuemntation project
         └── index.rst        # The index page for the docs site
+├── scripts                  # scripts using the pacakge 
 ├── src                      # this template uses the [Python "src" layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/#src-layout-vs-flat-layout). this directory contins the source code for your package.
     ├── package_name             # The main python package for the project
-    │   ├── __init__.py          # This tells Python that this is a package
-    │   └── VERSION              # The version for the project is kept in a static file
+    │         ├── __init__.py          # This tells Python that this is a package
+    │         └── VERSION              # The version for the project is kept in a static file
 └── tests                    # Unit tests for the project (add mote tests files here)
-    ├── conftest.py          # Configuration, hooks and fixtures for pytest
-    ├── __init__.py          # This tells Python that this is a test package
-    └── test_base.py         # The base test case for the project
 ├── tutorials
 ├── .gitignore               # A list of files to ignore when pushing to GitHub
 ├── .readthedocs.yaml        # Read the Docs configuration file
@@ -56,7 +54,7 @@ Repository structure:
 ├── MANIFEST.in              # A list of files to include in a package
 ├── README.md                # The main readme for the project
 ├── requirements.txt         # An empty file to hold the requirements for the project
-├── requirements-dev.txt    # List of requirements for testing and devlopment
+├── requirements-dev.txt     # List of requirements for testing and devlopment
 ├── setup.py                 # The setup.py file for installing and packaging the project
 ```
 
