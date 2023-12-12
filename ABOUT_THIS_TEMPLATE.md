@@ -35,6 +35,7 @@ Repository structure:
     └── source               
         └── conf.py          # The configuration file for your Sphinx docuemntation project
         └── index.rst        # The index page for the docs site
+├── scripts                  # scripts using the pacakge 
 ├── src                      # this template uses the [Python "src" layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/#src-layout-vs-flat-layout). this directory contins the source code for your package.
     ├── package_name             # The main python package for the project
     │   ├── __init__.py          # This tells Python that this is a package
