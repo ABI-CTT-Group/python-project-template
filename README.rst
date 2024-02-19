@@ -8,20 +8,20 @@
 |Conventional Commits|
 
 .. |Python 3| image:: https://img.shields.io/badge/Python-%3E=3.9-blue
-.. |Contributors| image:: https://img.shields.io/github/contributors/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D.svg?style=flat-square
-   :target: https://github.com/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D/graphs/contributors
-.. |Stargazers| image:: https://img.shields.io/github/stars/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D.svg?style=flat-square
-   :target: https://github.com/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D/stargazers
-.. |Issues| image:: https://img.shields.io/github/issues/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D.svg?style=flat-square
-   :target: https://github.com/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D/issues
-.. |GitHub issues-closed| image:: https://img.shields.io/github/issues-closed/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D.svg
-   :target: https://github.com/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D/issues
-.. |License| image:: https://img.shields.io/github/license/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D.svg?style=flat-square
-   :target: https://github.com/%7BGITHUB_ACCOUNT%7D/%7BREPO_NAME%7D/blob/master/LICENSE
+.. |Contributors| image:: https://img.shields.io/github/contributors/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
+   :target: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/graphs/contributors
+.. |Stargazers| image:: https://img.shields.io/github/stars/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
+   :target: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/stargazers
+.. |Issues| image:: https://img.shields.io/github/issues/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
+   :target: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues
+.. |GitHub issues-closed| image:: https://img.shields.io/github/issues-closed/{GITHUB_ACCOUNT}/{REPO_NAME}.svg
+   :target: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues
+.. |License| image:: https://img.shields.io/github/license/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
+   :target: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/blob/master/LICENSE
 .. |Contributor Covenant| image:: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
    :target: CODE_OF_CONDUCT.md
-.. |PyPI version fury.io| image:: https://badge.fury.io/py/%7BPYPI_PROJECT_NAME%7D.svg
-   :target: https://pypi.python.org/pypi/%7BPYPI_PROJECT_NAME%7D%7D/
+.. |PyPI version fury.io| image:: https://badge.fury.io/py/{PYPI_PROJECT_NAME}.svg
+   :target: https://pypi.python.org/pypi/{PYPI_PROJECT_NAME}}/
 .. |Conventional Commits| image:: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
    :target: https://conventionalcommits.org
 
