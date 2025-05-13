@@ -24,7 +24,7 @@ include-package-data = true
 #license-files = ["LICENSE"] # introduced in PEP639. However, as of February 2025, setuptools does not support PEP639 yet
 
 [tool.setuptools.dynamic]
-version = { attr = "src.package_name.__version__.__version__" }
+version = { attr = "package_name.__version__.__version__" }
 dependencies = { file = "requirements.txt" }
 
 [tool.setuptools.package-data]
