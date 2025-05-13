@@ -4,11 +4,28 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "package_name"
-version = "version"
-description = "A brief description of your package"
+description = "short description"
+dynamic = ["version", "dependencies"]
+authors = [
+    { name = "Chinchien Lin", email = "clin864@aucklanduni.ac.nz"}
+]
+maintainers = [{ name = "Chinchien Lin", email = "clin864@aucklanduni.ac.nz"}]
+readme = "README.md" # long description
 requires-python = ">=3.10"
-license = { file = "LICENSE" }
-dynamic = ["dependencies"]
+license = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/ABI-CTT-Group/python-project-template"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["package_name"]
+include-package-data = true
+#license-files = ["LICENSE"] # introduced in PEP639. However, as of February 2025, setuptools does not support PEP639 yet
 
 [tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+version = { attr = "package_name.__version__.__version__" }
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.package-data]
+"package_name" = ["resources/**"]
