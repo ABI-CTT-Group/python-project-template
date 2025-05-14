@@ -15,7 +15,7 @@ This template was modified from https://GitHub.com/rochacbruno/python-project-te
 5. Making and pushing your first commit
 
 ## What is included on the template:
-- A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your project.  
+- A basic [pyproject.toml](pyproject.toml) file to provide installation, packaging and distribution for your project.  
 - A Makefile with the most useful commands to install, test, lint, format and release your project.
   Template uses setuptools because it's the de-facto standard for Python packages, you can run `make switch-to-poetry` later if you want.
 - Documentation structure using [Sphinx](https://www.sphinx-doc.org)
