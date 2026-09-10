@@ -38,7 +38,6 @@ Repository structure:
     │         ├── __init__.py          # This tells Python that this is a package
     │         └── VERSION              # The version for the project is kept in a static file
 └── tests                    # Unit tests for the project (add mote tests files here)
-├── tutorials
 ├── .gitignore               # A list of files to ignore when pushing to GitHub
 ├── ABOUT_THIS_TEMPLATE      # Template information  
 ├── Containerfile            # A configuration file that automates the steps of creating a container image  
@@ -50,7 +49,7 @@ Repository structure:
 ├── MANIFEST.in              # A list of files to include in a package
 ├── README.md                # The main readme for the project
 ├── requirements.txt         # An empty file to hold the requirements for the project
-├── requirements-dev.txt     # List of requirements for testing and devlopment
+├── requirements-dev.txt     # List of requirements for testing and development
 ├── setup.py                 # The setup.py file for installing and packaging the project
 ```
 
