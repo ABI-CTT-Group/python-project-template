@@ -27,7 +27,7 @@ A modern Python project template following current best practices.
 - [Ruff](https://docs.astral.sh/ruff/) for fast linting and formatting (replaces black, isort, flake8).
 - [pytest](https://docs.pytest.org/) with coverage reporting for testing.
 - GitHub repository metadata (issue templates, PR template).
-- A disabled-by-default [GitHub Actions CI workflow](.github/workflows/ci.yml.disabled) for linting and testing on push/PR. (Rename to `ci.yml` to enable).
+- An optional [GitHub Actions CI workflow](templates/github/workflows/ci.yml) for linting and testing on push/PR. (Copy to `.github/workflows/ci.yml` to enable).
 - [src layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) for proper package isolation.
 
 
@@ -36,14 +36,15 @@ A modern Python project template following current best practices.
 ```text
 ├── .github/                     # GitHub metadata
 │   ├── ISSUE_TEMPLATE/          # Issue templates (bug report, feature request)
-│   ├── workflows/
-│   │   └── ci.yml.disabled      # GitHub Actions CI pipeline (rename to ci.yml to enable)
 │   └── PULL_REQUEST_TEMPLATE.md # PR template
 ├── docs/                        # Documentation (placeholder)
 ├── scripts/                     # Utility scripts (placeholder)
 ├── src/
 │   └── package_name/            # Main Python package
 │       └── __init__.py          # Package init with version via importlib.metadata
+├── templates/                   # Optional templates
+│   └── github/workflows/
+│       └── ci.yml               # Optional GitHub Actions CI pipeline (copy to .github/workflows to enable)
 ├── tests/                       # Unit tests
 │   ├── __init__.py
 │   └── test_placeholder.py      # Sample test to verify setup
