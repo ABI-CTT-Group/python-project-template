@@ -27,7 +27,7 @@ A modern Python project template following current best practices.
 - [Ruff](https://docs.astral.sh/ruff/) for fast linting and formatting (replaces black, isort, flake8).
 - [pytest](https://docs.pytest.org/) with coverage reporting for testing.
 - GitHub repository metadata (issue templates, PR template).
-- A basic [GitHub Actions CI workflow](.github/workflows/ci.yml) for linting and testing on push/PR.
+- A disabled-by-default [GitHub Actions CI workflow](.github/workflows/ci.yml.disabled) for linting and testing on push/PR. (Rename to `ci.yml` to enable).
 - [src layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) for proper package isolation.
 
 
@@ -37,7 +37,7 @@ A modern Python project template following current best practices.
 ├── .github/                     # GitHub metadata
 │   ├── ISSUE_TEMPLATE/          # Issue templates (bug report, feature request)
 │   ├── workflows/
-│   │   └── ci.yml               # GitHub Actions CI pipeline
+│   │   └── ci.yml.disabled      # GitHub Actions CI pipeline (rename to ci.yml to enable)
 │   └── PULL_REQUEST_TEMPLATE.md # PR template
 ├── docs/                        # Documentation (placeholder)
 ├── scripts/                     # Utility scripts (placeholder)
