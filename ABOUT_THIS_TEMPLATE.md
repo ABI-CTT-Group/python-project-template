@@ -31,10 +31,7 @@ Repository structure:
 ├── .GitHub                  # GitHub metadata for repository
 │   ├── ISSUE_TEMPLATE            # issue templates
 │   └── PULL_REQUEST_TEMPLATE.md  # The CI pipeline for GitHub Actions
-├── docs                     # Documentation structure based on Sphinx
-    └── source               
-        └── conf.py          # The configuration file for your Sphinx docuemntation project
-        └── index.rst        # The index page for the docs site
+├── docs                     # Documentation
 ├── scripts                  # scripts using the pacakge 
 ├── src                      # this template uses the [Python "src" layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/#src-layout-vs-flat-layout). this directory contins the source code for your package.
     ├── package_name             # The main python package for the project
@@ -43,7 +40,6 @@ Repository structure:
 └── tests                    # Unit tests for the project (add mote tests files here)
 ├── tutorials
 ├── .gitignore               # A list of files to ignore when pushing to GitHub
-├── .readthedocs.yaml        # Read the Docs configuration file
 ├── ABOUT_THIS_TEMPLATE      # Template information  
 ├── Containerfile            # A configuration file that automates the steps of creating a container image  
 ├── CODE_OF_CONDUCT          # code of the conduct 
