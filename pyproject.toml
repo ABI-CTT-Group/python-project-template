@@ -1,31 +1,57 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "package_name"
-description = "short description"
-dynamic = ["version", "dependencies"]
+version = "0.1.0"
+description = "A short description of the project."
 authors = [
-    { name = "Chinchien Lin", email = "clin864@aucklanduni.ac.nz"}
+    { name = "Your Name", email = "your.email@example.com" },
 ]
-maintainers = [{ name = "Chinchien Lin", email = "clin864@aucklanduni.ac.nz"}]
-readme = "README.md" # long description
-requires-python = ">=3.10"
+readme = "README.md"
+requires-python = ">=3.12"
 license = "Apache-2.0"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.4",
+    "build",
+]
 
 [project.urls]
-Homepage = "https://github.com/ABI-CTT-Group/python-project-template"
+Homepage = "https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}"
+Repository = "https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}"
+Issues = "https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-packages = ["package_name"]
-include-package-data = true
-#license-files = ["LICENSE"] # introduced in PEP639. However, as of February 2025, setuptools does not support PEP639 yet
-
-[tool.setuptools.dynamic]
-version = { attr = "package_name.__version__.__version__" }
-dependencies = { file = ["requirements.txt"] }
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.setuptools.package-data]
 "package_name" = ["resources/**"]
+
+[tool.ruff]
+line-length = 120
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["package_name"]
+
+[tool.coverage.report]
+show_missing = true

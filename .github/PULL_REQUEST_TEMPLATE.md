@@ -2,14 +2,15 @@
 _Write an overview about it._
 
 ### Details
-_Describe more what you did on changes._
+_Describe what you changed and why._
 1. (...)
 2. (...)
 
-### Bugfixes :bug: (delete if dind't have any)
+### Bugfixes :bug: (delete if none)
 -
 
 ### Checks
-- [ ] Closed #798
-- [ ] Tested Changes
-- [ ] Stakeholder Approval
+- [ ] Closes #___
+- [ ] Tests pass (`make test`)
+- [ ] Linting passes (`make lint`)
+- [ ] Tested changes manually
