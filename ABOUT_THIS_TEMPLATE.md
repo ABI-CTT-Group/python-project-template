@@ -29,6 +29,7 @@ A modern Python project template following current best practices.
 - GitHub repository metadata (issue templates, PR template).
 - An optional [GitHub Actions CI workflow](templates/github/workflows/ci.yml) for linting and testing on push/PR. (Copy to `.github/workflows/ci.yml` to enable).
 - [src layout](https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/) for proper package isolation.
+- Agentic coding support via a hub-and-spoke model: [AGENTS.md](AGENTS.md) as the single source of truth for AI coding assistants, with lightweight spoke files for [Claude](CLAUDE.md) and [GitHub Copilot](.github/copilot-instructions.md). Includes [.aiexclude](.aiexclude) for AI context exclusion.
 
 
 ## Structure
@@ -36,6 +37,7 @@ A modern Python project template following current best practices.
 ```text
 ├── .github/                     # GitHub metadata
 │   ├── ISSUE_TEMPLATE/          # Issue templates (bug report, feature request)
+│   ├── copilot-instructions.md  # GitHub Copilot instructions (references AGENTS.md)
 │   └── PULL_REQUEST_TEMPLATE.md # PR template
 ├── docs/                        # Documentation (placeholder)
 ├── scripts/                     # Utility scripts (placeholder)
@@ -48,8 +50,11 @@ A modern Python project template following current best practices.
 ├── tests/                       # Unit tests
 │   ├── __init__.py
 │   └── test_placeholder.py      # Sample test to verify setup
+├── .aiexclude                   # AI context exclusion (secrets, build artifacts)
 ├── .gitignore                   # Git ignore rules
 ├── ABOUT_THIS_TEMPLATE.md       # This file (delete after setup)
+├── AGENTS.md                    # AI agent instructions (single source of truth)
+├── CLAUDE.md                    # Claude Code instructions (references AGENTS.md)
 ├── CODE_OF_CONDUCT.md           # Contributor Covenant v2.1
 ├── CONTRIBUTING.md              # Contribution guide
 ├── LICENSE                      # Apache License 2.0
@@ -88,6 +93,17 @@ Modern Python packaging no longer requires `setup.py`. The `pyproject.toml` file
 ### Why no pre-commit?
 
 Pre-commit is excellent for larger teams but adds an extra dependency and setup step. The same checks are available as Makefile targets (`make lint`, `make fmt`) and in the CI pipeline. You can add pre-commit later as the project grows.
+
+### Why a hub-and-spoke model for AI agent files?
+
+AI coding assistants (Gemini, Claude, GitHub Copilot, Cursor, etc.) each read project instructions from different files. Instead of duplicating project conventions in every agent-specific file, this template uses a **hub-and-spoke model**:
+
+- **Hub**: `AGENTS.md` is the single source of truth — it documents architecture, coding conventions, testing patterns, and tooling commands.
+- **Spokes**: `CLAUDE.md` and `.github/copilot-instructions.md` are lightweight files that simply reference `AGENTS.md`.
+
+This keeps project knowledge in one place. When conventions change, you only update `AGENTS.md`. To add support for a new AI tool, create a small spoke file that points back to `AGENTS.md`.
+
+The `.aiexclude` file prevents AI tools from reading sensitive files (secrets, environment variables) and irrelevant files (build artifacts, virtual environments). It's similar to `.gitignore` but for AI context.
 
 
 ## The Makefile
