@@ -60,3 +60,13 @@ build:            ## Build the package.
 
 .PHONY: check
 check: lint test  ## Run all checks (lint + test).
+
+.PHONY: sync-ai-ignore
+sync-ai-ignore:   ## Sync .cursorignore/.copilotignore from .aiexclude.
+	cp .aiexclude .cursorignore
+	cp .aiexclude .copilotignore
+
+.PHONY: check-ai-ignore
+check-ai-ignore:  ## Ensure .cursorignore/.copilotignore match .aiexclude.
+	@cmp -s .aiexclude .cursorignore || (echo ".cursorignore is out of sync with .aiexclude. Run: make sync-ai-ignore" && exit 1)
+	@cmp -s .aiexclude .copilotignore || (echo ".copilotignore is out of sync with .aiexclude. Run: make sync-ai-ignore" && exit 1)

@@ -1,0 +1,15 @@
+name: AI Ignore Sync Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-ai-ignore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify AI ignore files are in sync
+        run: make check-ai-ignore

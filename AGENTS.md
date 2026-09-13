@@ -49,3 +49,12 @@ All common tasks are available as Makefile targets:
 | `make build`   | Build the package                    |
 | `make clean`   | Clean unused files                   |
 | `make venv`    | Create a virtual environment         |
+| `make sync-ai-ignore` | Sync `.cursorignore` and `.copilotignore` from `.aiexclude` |
+| `make check-ai-ignore` | Verify AI ignore files match `.aiexclude` |
+
+## AI Ignore Files
+
+- Use `.aiexclude` as the canonical source for AI context exclusions.
+- Keep `.cursorignore` and `.copilotignore` identical to `.aiexclude`.
+- Run `make sync-ai-ignore` after updating `.aiexclude`.
+- Use `make check-ai-ignore` in CI/local checks to detect drift.

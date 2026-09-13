@@ -1,0 +1,33 @@
+# AI Context Exclusion
+# Prevents AI tools from reading these files.
+# Supported natively by Gemini/Antigravity.
+#
+# For other tools, create tool-specific variants if needed:
+#   - Cursor:  .cursorignore
+#   - Copilot: .copilotignore
+# You can copy this file's patterns into those files.
+
+# Secrets & environment
+.env
+.envrc
+*.pem
+*.key
+*.secret
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Coverage & test reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.lcov
