@@ -1,0 +1,22 @@
+# How to use pre-commit:
+# 1. Install pre-commit (e.g. `pip install pre-commit` or `brew install pre-commit`)
+# 2. Install the git hook scripts: `pre-commit install`
+# 
+# The hooks will then run automatically on `git commit`.
+# To run all hooks manually on all files, use: `pre-commit run --all-files`
+#
+# To manually run just the gitleaks hook:
+# `pre-commit run gitleaks --all-files`
+#
+# Alternatively, to run gitleaks standalone (if installed):
+# `gitleaks detect --source . -v`
+#
+# To scan a specific directory without relying on Git history (e.g., for untracked files):
+# `gitleaks detect --source docs/artifacts/ --no-git`
+# (The --no-git flag forces gitleaks to scan the raw file contents on disk instead of git history)
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
