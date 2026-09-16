@@ -122,6 +122,3 @@ cython_debug/
 *.swp
 *.swo
 *~
-
-# AI agent workspace config (Gemini/Antigravity skills & rules)
-.agents/
