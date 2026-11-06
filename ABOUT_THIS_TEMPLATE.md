@@ -57,7 +57,7 @@ A modern Python project template following current best practices.
 ├── CLAUDE.md                    # Claude Code instructions (references AGENTS.md)
 ├── CODE_OF_CONDUCT.md           # Contributor Covenant v2.1
 ├── CONTRIBUTING.md              # Contribution guide
-├── LICENSE                      # Apache License 2.0
+├── LICENSE.md                   # Dual license (Apache 2.0 non-commercial / commercial)
 ├── Makefile                     # Development commands
 ├── README.md                    # Project readme
 └── pyproject.toml               # Project metadata, build config, tool settings

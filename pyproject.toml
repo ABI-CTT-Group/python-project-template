@@ -11,7 +11,7 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.12"
-license = "Apache-2.0"
+license = "LicenseRef-Dual-License"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

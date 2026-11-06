@@ -7,7 +7,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GitHub issues-closed][issues-closed-shield]][issues-closed-url]
-[![License][license-shield]][license-url]
 [![Conventional Commits][conventional-commits-shield]][conventional-commits-url]
 
 [contributors-shield]: https://img.shields.io/github/contributors/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
@@ -18,8 +17,6 @@
 [issues-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/{GITHUB_ACCOUNT}/{REPO_NAME}.svg
 [issues-closed-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/issues?q=is%3Aissue+is%3Aclosed
-[license-shield]: https://img.shields.io/github/license/{GITHUB_ACCOUNT}/{REPO_NAME}.svg?style=flat-square
-[license-url]: https://github.com/{GITHUB_ACCOUNT}/{REPO_NAME}/blob/main/LICENSE
 [conventional-commits-shield]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white
 [conventional-commits-url]: https://conventionalcommits.org
 
